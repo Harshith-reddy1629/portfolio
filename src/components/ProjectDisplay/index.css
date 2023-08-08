@@ -87,7 +87,7 @@
   color: #fff;
   border: 2px solid #fff;
 }
-@media (max-width: 575px) {
+@media (max-width: 768px) {
   .project-box {
     width: 80vw;
   }

@@ -12,8 +12,8 @@ const ReactPopUp = props => {
         modal
         trigger={
           <div className="contact-item">
-            <div>{ContactIcon}</div>
-            <p>{ContactType}</p>
+            <div className="cont-icon">{ContactIcon}</div>
+            <p className="contact-name">{ContactType}</p>
           </div>
         }
       >

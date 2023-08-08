@@ -4,10 +4,8 @@ import './index.css'
 
 const Header = props => {
   const {location} = props
-  console.log(location)
-  const {pathname} = location
 
-  console.log(pathname)
+  const {pathname} = location
 
   const isHome = pathname === '/'
   const isAbout = pathname === '/about'

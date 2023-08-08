@@ -39,7 +39,7 @@ const ContactsList = [
     ContactScanner:
       'https://res.cloudinary.com/reddyimgs/image/upload/v1691399524/365485398_669469625039240_8338569899578386088_n_tpvbdj.jpg',
     ContactLink:
-      'https://l.instagram.com/?u=https%3A%2F%2Fwww.snapchat.com%2Fadd%2Fharshith1629%3Fshare_id%3Da7-JluE_qdI%26locale%3Den-US&e=AT2VeOCCirL6kq2R4k6JdD9ko7bemD5eFoi95ey36PK9GUPFDZsQx2NGnd_o65_u3cO0gfSrQWZ3gDMPBgKKRWEuyGeXqtkQYLhGOAU9k20DRU3EFdAfP2NRD55n4Vdk7jRwVa2bEautb6bmpVGl0Q',
+      'https://www.snapchat.com/add/harshith1629?sender_web_id=852ae6ae-5485-4843-8bed-a76cdeff7801&device_type=desktop&is_copy_url=true',
   },
   {
     id: 5,
