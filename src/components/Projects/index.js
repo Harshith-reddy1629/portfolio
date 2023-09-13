@@ -80,10 +80,6 @@ class Projects extends Component {
             <p>Loading...</p>
             {/* <div className="box"> </div> */}
             {/* <div className="box"> </div> */}
-            {/* <div className="box"> </div>
-            <div className="box"> </div>
-            <div className="box"> </div>
-            <div className="box"> </div> */}
           </div>
         )
       case 'Success':
