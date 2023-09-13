@@ -1,33 +1,106 @@
+import {Component} from 'react'
+
 import ProjectDisplay from '../ProjectDisplay'
 
-import listOfProjexts from '../ProjectsList'
+// import listOfProjexts from '../ProjectsList'
 
 import './index.css'
 
-const Projects = () => {
-  const ListOfProjects = listOfProjexts
-  return (
-    <div className="project-container">
-      <div className="para-container">
-        <p className="project-text">
-          I have collected a diverse range of{' '}
-          <span className="span-element">Projects</span> that showcase my{' '}
-          <span className="span-element">skills</span> and{' '}
-          <span className="span-element">experience</span>. Each project
-          represents a unique challenge I have tackled, and a chance for me to
-          demonstrate my <span className="span-element">creativity</span> and{' '}
-          <span className="span-element">problem-solving</span> abilities.{' '}
-        </p>
+class Projects extends Component {
+  state = {pageStatus: 'Failed', listofmyprojects: []}
+
+  componentDidMount() {
+    this.fetchingData()
+  }
+
+  fetchingData = async () => {
+    this.setState({pageStatus: 'Loading'})
+
+    try {
+      const requestOptions = {
+        method: 'GET',
+        redirect: 'follow',
+      }
+
+      const response = await fetch(
+        'https://my-node-app-vh9h.onrender.com/projects',
+        requestOptions,
+      )
+
+      const recieved = await response.json()
+
+      const result = recieved.sort((a, b) => b.id - a.id)
+
+      if (response.ok === true) {
+        this.setState({pageStatus: 'Success', listofmyprojects: result})
+      } else {
+        this.setState({pageStatus: 'Failed'})
+      }
+    } catch (error) {
+      this.setState({pageStatus: 'Failed'})
+    }
+  }
+
+  successView = () => {
+    const {listofmyprojects} = this.state
+
+    // const listOfProjexts = listOfProjexts
+
+    return (
+      <div className="project-container">
+        <div className="para-container">
+          <p className="project-text">
+            I have collected a diverse range of{' '}
+            <span className="span-element">Projects</span> that showcase my{' '}
+            <span className="span-element">skills</span> and{' '}
+            <span className="span-element">experience</span>. Each project
+            represents a unique challenge I have tackled, and a chance for me to
+            demonstrate my <span className="span-element">creativity</span> and{' '}
+            <span className="span-element">problem-solving</span> abilities.{' '}
+          </p>
+        </div>
+        <div className="projects-container">
+          <ul className="projects-list-container">
+            {listofmyprojects.map(each => (
+              <ProjectDisplay key={each.id} item={each} />
+            ))}
+          </ul>
+        </div>
       </div>
-      <div className="projects-container">
-        <ul className="projects-list-container">
-          {ListOfProjects.map(each => (
-            <ProjectDisplay key={each.id} item={each} />
-          ))}
-        </ul>
-      </div>
-    </div>
-  )
+    )
+  }
+
+  render() {
+    const {pageStatus} = this.state
+
+    switch (pageStatus) {
+      case 'Loading':
+        return (
+          <div className="failed-loading-view">
+            <div className="box"> </div>
+            <div className="box"> </div>
+            {/* <div className="box"> </div>
+            <div className="box"> </div>
+            <div className="box"> </div>
+            <div className="box"> </div> */}
+          </div>
+        )
+      case 'Success':
+        return this.successView()
+      case 'Failed':
+        return (
+          <div className="failed-loading-view">
+            <p>OOPS! Something went Wrong</p>
+            <button type="button" className="fv-b" onClick={this.fetchingData}>
+              Try Again
+            </button>
+          </div>
+        )
+
+      default:
+        return null
+    }
+  }
 }
 
 export default Projects
