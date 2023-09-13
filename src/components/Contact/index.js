@@ -23,7 +23,7 @@ const Contact = () => (
           <BiLogoGmail size={20} />: reddybharshith3@gmail.com{' '}
         </p>
       </a>
-      <a href="tel:Number" className="contact-an">
+      <a href="tel:6281715949" className="contact-an">
         <p className="mail">
           <BiPhone size={20} /> : 62XXXXXXXX
         </p>
