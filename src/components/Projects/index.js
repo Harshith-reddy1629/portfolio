@@ -77,8 +77,9 @@ class Projects extends Component {
       case 'Loading':
         return (
           <div className="failed-loading-view">
-            <div className="box"> </div>
-            <div className="box"> </div>
+            <p>Loading...</p>
+            {/* <div className="box"> </div> */}
+            {/* <div className="box"> </div> */}
             {/* <div className="box"> </div>
             <div className="box"> </div>
             <div className="box"> </div>
