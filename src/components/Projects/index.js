@@ -23,7 +23,7 @@ class Projects extends Component {
       }
 
       const response = await fetch(
-        'https://my-node-app-vh9h.onrender.com/projects',
+        'https://dull-erin-goldfish-cuff.cyclic.cloud/projects',
         requestOptions,
       )
 
