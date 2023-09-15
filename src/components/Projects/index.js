@@ -23,7 +23,7 @@ class Projects extends Component {
       }
 
       const response = await fetch(
-        'https://dull-erin-goldfish-cuff.cyclic.cloud/projects',
+        'https://bhr-projects.cyclic.cloud/projects',
         requestOptions,
       )
 
