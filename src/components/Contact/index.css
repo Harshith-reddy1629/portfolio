@@ -59,14 +59,14 @@
 }
 
 .scanner {
-  height: 230px;
-  width: 200px;
+  /* height: 230px; */
+  width: 220px;
   border-radius: 15px;
 }
 
 .popup-content {
-  box-sizing: content-box;
-  width: 400px !important;
+  box-sizing: border-box;
+  width: 500px !important;
   border-radius: 15px;
   display: flex;
   /* gap: 30px; */
@@ -123,8 +123,10 @@
   .popup-content {
     flex-direction: column;
     width: 300px !important;
+    height: 420px;
     padding-top: 20px !important;
     padding-bottom: 20px !important;
+    /* gap: 30px; */
   }
   .cont-icon {
   }

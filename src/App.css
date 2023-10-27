@@ -38,3 +38,35 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.resume-pdf {
+  cursor: pointer;
+  background-color: rgb(50, 93, 93);
+  padding: 8px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: 0 0 3px 1px #363636dd, 0 0 6px 4px #4e4e4e8a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  animation: resizing 2s infinite;
+}
+.resume-pdf:hover {
+  box-shadow: 0 0 9px #859a9a8a;
+}
+
+@keyframes resizing {
+  10% {
+    scale: 103%;
+  }
+  30% {
+    scale: 97%;
+  }
+  55% {
+    scale: 102%;
+  }
+}

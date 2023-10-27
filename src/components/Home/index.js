@@ -15,15 +15,7 @@ const Home = () => (
     <div className="text-con">
       <div className="details-con">
         <h1 className="name-text">
-          HI, I&apos;m{' '}
-          <span
-            // style={{
-            //   transform: `translateX(100px) translateY(100px)`,
-            // }}
-            className="name"
-          >
-            HARSHITH REDDY
-          </span>
+          HI, I&apos;m <span className="name">HARSHITH REDDY</span>
         </h1>
         <p className="desc-text">Aspiring MERN Stack Developer</p>
         <p className="home-para-text">

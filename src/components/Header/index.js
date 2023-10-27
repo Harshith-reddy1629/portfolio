@@ -15,13 +15,10 @@ const Header = props => {
   return (
     <nav className="header-container">
       <div className="logo-and-title-container">
-        {' '}
         <Link className="route-link" to="/">
           <img
             alt="wave"
             className="logo"
-            //   src="https://res.cloudinary.com/reddyimgs/image/upload/v1686216028/9893906f-6524-4032-8a0a-7fca0b73c3e4_ur1i91.jpg"
-            // src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg"
             src="https://res.cloudinary.com/reddyimgs/image/upload/v1691405404/new_o6z0aq.jpg"
           />
         </Link>

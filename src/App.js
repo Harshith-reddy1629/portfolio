@@ -1,4 +1,4 @@
-// import {Route, withRouter, Switch} from 'react-router-dom'
+import {BiSolidFilePdf} from 'react-icons/bi'
 import {Switch, Route} from 'react-router-dom'
 
 import About from './components/About'
@@ -8,6 +8,8 @@ import NotFound from './components/NotFound'
 import Projects from './components/Projects'
 
 import Header from './components/Header'
+
+import P from './components/BHR_RESUME.pdf'
 
 import './App.css'
 
@@ -23,6 +25,19 @@ const App = () => (
           <Route exact path="/projects" component={Projects} />
           <Route component={NotFound} />
         </Switch>
+        <p className="resume-pdf">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            style={{all: 'unset'}}
+            href={P}
+            title="RESUME"
+          >
+            {' '}
+            RESUME
+          </a>
+          <BiSolidFilePdf size={18} />
+        </p>
       </div>
     </div>
   </div>
