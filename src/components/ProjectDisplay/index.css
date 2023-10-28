@@ -71,6 +71,16 @@
   height: 200px;
   width: 320px;
 }
+
+@media (768px < width < 1155px) {
+  .project-img {
+    width: 100%;
+  }
+  .project-box {
+    flex-shrink: 0;
+  }
+}
+
 .text-container {
   display: flex;
   flex-direction: column;
@@ -82,7 +92,7 @@
   padding: 10px 15px;
   border: 2px solid rgb(204, 58, 58);
   font-weight: bolder;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 .view-button:hover {
   color: #fff;

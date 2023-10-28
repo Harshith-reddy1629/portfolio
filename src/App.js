@@ -9,7 +9,7 @@ import Projects from './components/Projects'
 
 import Header from './components/Header'
 
-import P from './components/BHR_RESUME.pdf'
+import P from './components/HR_RES.pdf'
 
 import './App.css'
 
