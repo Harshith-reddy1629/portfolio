@@ -38,7 +38,7 @@
   padding-left: 0px;
   gap: 20px;
 }
-@media (576px < width <768px) {
+@media (576px < width <900px) {
   .header-container {
     padding-left: 40px;
   }
@@ -54,6 +54,7 @@
   list-style-type: none;
   font-size: large;
   letter-spacing: 1px;
+  opacity: 0.8;
 }
 @media (max-width: 575px) {
   .header-container {
@@ -82,24 +83,28 @@
 }
 
 .active-link {
-  color: #12022f;
+  color: #83e0c1;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  text-shadow: 0 0 2px #ffffffaa;
+  opacity: 1;
+  /* text-shadow: 0 0 2px #ffffffaa; */
 }
 .active-link::after {
   content: '';
   margin-top: 4px;
   padding: 1px;
-  background-color: #12022f;
-  box-shadow: 0 0 1px #ffffffaa;
+  /* background-color: #38aa9c; */
+  background-color: #fff;
+  /* box-shadow: 0 0 1px #ffffffaa; */
 }
 
 @media (max-width: 575px) {
   .route-link {
     margin-left: 4px;
   }
+
   .active-link::after {
-    display: none;
+    /* display: none; */
   }
 }

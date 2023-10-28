@@ -1,5 +1,6 @@
 .home-container {
   min-height: 80dvh;
+  max-height: 100vh;
   display: flex;
 
   justify-content: space-evenly;
@@ -201,12 +202,13 @@
     opacity: 0;
   }
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
+@media (max-width: 900px) {
   .home-container {
     flex-direction: column;
     justify-content: center;
     width: 100vw;
-    overflow: scroll;
+    overflow: auto;
     gap: 10px;
   }
   .profile-image {

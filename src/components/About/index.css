@@ -5,8 +5,8 @@
   align-items: center;
   color: #fff;
   min-height: 100vh;
-  overflow-y: scroll;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  overflow-y: auto;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 28px;
   padding: 10px;
   animation: opa 1s ease-in forwards;
@@ -93,6 +93,7 @@
 }
 .skills-info-container {
   width: 55%;
+
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -110,7 +111,7 @@
   width: 100%;
   flex-wrap: wrap;
 }
-@media (max-width: 575px) {
+@media (max-width: 900px) {
   .skills-info-container {
     flex-direction: column;
     justify-content: center;
@@ -130,7 +131,7 @@
     width: 100%;
   }
   .education-list-item {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -155,12 +156,15 @@
   .education-container {
     flex-direction: column;
     gap: 0;
+    /* padding: 18px; */
+    padding-top: 15px;
   }
   .horizantal-br {
     display: none;
   }
   .institute-name {
     margin-top: 8px;
+    /* font-size: 20px; */
   }
 }
 @keyframes opa {
@@ -204,7 +208,17 @@
   animation: t2 0.9s ease-out forwards;
 }
 .viewer-text {
+  text-align: center;
   animation: t3 0.9s ease-in-out forwards;
+}
+@media (max-width: 920px) and (min-width: 780px) {
+  .about-name-text {
+    animation: t2 0.9s ease-out forwards;
+  }
+  .viewer-text {
+    /* text-align: end; */
+    animation: t3 0.9s ease-in-out forwards;
+  }
 }
 @keyframes t1 {
   0% {
@@ -228,5 +242,10 @@
   }
   100% {
     transform: translate(0%, 0%);
+  }
+}
+@media (max-width: 1120px) and (min-width: 900px) {
+  .skills-info-container {
+    width: 80%;
   }
 }
