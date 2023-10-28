@@ -25,19 +25,19 @@ const App = () => (
           <Route exact path="/projects" component={Projects} />
           <Route component={NotFound} />
         </Switch>
-        <p className="resume-pdf">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            style={{all: 'unset'}}
-            href={P}
-            title="RESUME"
-          >
+        <a
+          target="_blank"
+          rel="noreferrer"
+          style={{all: 'unset'}}
+          href={P}
+          title="RESUME"
+        >
+          <p className="resume-pdf">
             {' '}
             RESUME
-          </a>
-          <BiSolidFilePdf size={18} />
-        </p>
+            <BiSolidFilePdf size={18} />
+          </p>
+        </a>
       </div>
     </div>
   </div>

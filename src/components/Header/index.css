@@ -8,6 +8,7 @@
   background-color: rgb(65, 82, 113);
   color: #fff;
   /* height: 60px; */
+  width: 100%;
 }
 
 .logo-and-title-container {
@@ -37,6 +38,14 @@
   padding-left: 0px;
   gap: 20px;
 }
+@media (576px < width <768px) {
+  .header-container {
+    padding-left: 40px;
+  }
+  .nav-items-list {
+    width: 75%;
+  }
+}
 
 .link-item {
   /* padding: 4px; */
@@ -48,7 +57,7 @@
 }
 @media (max-width: 575px) {
   .header-container {
-    padding: 8px;
+    padding: 5px;
   }
   .logo-and-title-container {
     display: none;
