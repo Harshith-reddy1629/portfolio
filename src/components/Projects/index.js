@@ -32,7 +32,7 @@ class Projects extends Component {
       const recieved = await response.json()
 
       const result = recieved.sort((a, b) => b.id - a.id)
-
+      console.log(result)
       if (response.ok === true) {
         this.setState({pageStatus: 'Success', listofmyprojects: result})
       } else {
