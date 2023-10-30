@@ -2,6 +2,8 @@ import {Link, withRouter} from 'react-router-dom'
 
 import './index.css'
 
+// require('dotenv').config()
+
 const Header = props => {
   const {location} = props
 
@@ -36,6 +38,7 @@ const Header = props => {
             Projects
           </li>
         </Link>
+
         <Link className="route-link" to="/contact">
           <li className={`link-item ${isContact && 'active-link'}`}>Contact</li>
         </Link>

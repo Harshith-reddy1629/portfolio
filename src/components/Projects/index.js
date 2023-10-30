@@ -23,7 +23,7 @@ class Projects extends Component {
       }
 
       const response = await fetch(
-        'https://bhr-projects.cyclic.cloud/projects',
+        process.env.REACT_APP_MY_PROJECTS_API,
         requestOptions,
       )
 

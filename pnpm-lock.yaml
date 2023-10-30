@@ -5,7 +5,6 @@ specifiers:
   '@testing-library/react': 11.2.5
   '@testing-library/user-event': 12.6.2
   chalk: 4.1.0
-  dotenv: 16.3.1
   eslint-config-airbnb: 18.2.1
   eslint-config-prettier: 8.1.0
   eslint-plugin-prettier: 3.3.1
@@ -29,7 +28,6 @@ dependencies:
   '@testing-library/react': 11.2.5_react-dom@17.0.1+react@17.0.1
   '@testing-library/user-event': 12.6.2
   chalk: 4.1.0
-  dotenv: 16.3.1
   framer-motion: 10.15.0_react-dom@17.0.1+react@17.0.1
   history: 5.0.0
   react: 17.0.1
@@ -4940,11 +4938,6 @@ packages:
   /dotenv-expand/5.1.0:
     resolution: {integrity: sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA==}
     dev: true
-
-  /dotenv/16.3.1:
-    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
-    engines: {node: '>=12'}
-    dev: false
 
   /dotenv/8.2.0:
     resolution: {integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==}
