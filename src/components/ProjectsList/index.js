@@ -89,7 +89,6 @@ const listOfProjexts = [
     description: '',
     projectLink: 'https://pswrdstorage.ccbp.tech/',
   },
-  //   {id: 1, projectImg: 'src', projectName: '', description: '', projectLink: ''},
 ]
 
 export default listOfProjexts

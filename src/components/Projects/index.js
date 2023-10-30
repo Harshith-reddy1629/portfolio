@@ -2,6 +2,8 @@ import {Component} from 'react'
 
 import ProjectDisplay from '../ProjectDisplay'
 
+import safeList from './projectslist.json'
+
 // import listOfProjexts from '../ProjectsList'
 
 import './index.css'
@@ -37,7 +39,7 @@ class Projects extends Component {
         this.setState({pageStatus: 'Failed'})
       }
     } catch (error) {
-      this.setState({pageStatus: 'Failed'})
+      this.setState({pageStatus: 'Success', listofmyprojects: safeList})
     }
   }
 
