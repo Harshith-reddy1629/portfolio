@@ -32,7 +32,7 @@
     transparent 25%,
     transparent 50%
   );
-  animation: rot1 4s infinite;
+  animation: rotate-animation1 4s infinite;
   border-radius: 90px 0;
 }
 
@@ -116,10 +116,10 @@
   }
 }
 .home-para-text {
-  animation: downup 0.9s ease-out forwards;
+  animation: slide-up 0.9s ease-out forwards;
 }
 
-@keyframes downup {
+@keyframes slide-up {
   0% {
     transform: translate(100%, 00%);
   }
@@ -226,7 +226,7 @@
     border-radius: 0%;
     margin-top: 20px;
 
-    animation: rot1 8s 0.9s infinite linear;
+    animation: rotate-animation1 8s 0.9s infinite linear;
   }
 
   @keyframes grow {
@@ -358,7 +358,7 @@
   initial-value: 0deg;
 }
 
-@keyframes rot {
+@keyframes rotate-animation {
   0% {
     --a: 0deg;
   }
@@ -366,7 +366,7 @@
     --a: 90deg;
   }
 }
-@keyframes rot1 {
+@keyframes rotate-animation1 {
   0% {
     --a: 0deg;
   }

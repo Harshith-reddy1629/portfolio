@@ -56,6 +56,9 @@
   letter-spacing: 1px;
   opacity: 0.8;
 }
+.link-item:hover {
+  opacity: 1;
+}
 @media (max-width: 575px) {
   .header-container {
     padding: 5px;
@@ -107,4 +110,9 @@
   .active-link::after {
     /* display: none; */
   }
+}
+
+.link-item:hover {
+  /* background: radial-gradient(transparent, #68998990);
+  box-shadow: 0 0 24px #689989; */
 }

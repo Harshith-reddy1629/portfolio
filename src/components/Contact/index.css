@@ -22,10 +22,14 @@
   /* padding: 20px; */
   border-radius: 20%;
   transition: box-shadow 0.2s;
+  /* box-shadow: 0 0 8px rgb(62, 62, 62); */
 }
 .contact-item:hover {
   border: 2px solid #fff;
-  box-shadow: 3px 3px #fff;
+  box-shadow: 0 0 12px #ffffff;
+}
+.contact-item:active {
+  scale: 97%;
 }
 
 .cont-div {

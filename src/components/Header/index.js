@@ -14,6 +14,8 @@ const Header = props => {
   const isContact = pathname === '/contact'
   const isProjects = pathname === '/projects'
 
+  const dragE = () => console.log('object')
+
   return (
     <nav className="header-container">
       <div className="logo-and-title-container">
@@ -28,7 +30,12 @@ const Header = props => {
 
       <ul className="nav-items-list">
         <Link className="route-link" to="/">
-          <li className={`link-item ${isHome && 'active-link'}`}>Home</li>
+          <li
+            onDragLeaveCapture={dragE}
+            className={`link-item ${isHome && 'active-link'}`}
+          >
+            Home
+          </li>
         </Link>
         <Link className="route-link" to="/about">
           <li className={`link-item ${isAbout && 'active-link'}`}>About me</li>
