@@ -2,10 +2,13 @@ import {BiLogoGmail, BiPhone} from 'react-icons/bi'
 import './index.css'
 import ReactPopUp from '../ContactBtn'
 import ContactsList from '../ContactLists'
+import ContactInbox from '../Contact_Inbox'
 
 const Contact = () => (
   <div className="contact-container">
     <h1 className="contact-heading">CONNECT ME ON</h1>
+
+    <ContactInbox />
 
     <div className="contact-items-container">
       {ContactsList.map(each => (
